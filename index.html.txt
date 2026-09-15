@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Line Fitness | Premium 24/7 Gym & Conditioning Lebu</title>
+    <!-- Google Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Top Info Bar -->
+    <div class="top-bar">
+        <span><i class="fa-solid fa-location-dot"></i> Lebu Fikre Kunsipagna, Royal Apartment</span>
+        <span><i class="fa-solid fa-clock"></i> Open 24 Hours / 7 Days</span>
+        <span><i class="fa-solid fa-phone"></i> Call Us: 0911 18 21 41</span>
+    </div>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <a href="#home" class="logo">
+            <i class="fa-solid fa-bolt-lightning"></i> LIFE LINE <span>FITNESS</span>
+        </a>
+        <nav class="nav-links" id="navLinks">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#plans">Membership</a>
+            <a href="#workout-guide">Workout Guide</a>
+            <a href="#calculator">BMI Calculator</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="nav-actions">
+            <a href="#register" class="btn btn-glow">Join Today</a>
+            <div class="menu-toggle" id="mobileMenuBtn">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-tag"><i class="fa-solid fa-fire"></i> LEBU'S ULTIMATE FITNESS DESTINATION</div>
+            <h1>TRANSFORM YOUR BODY. <span>DOMINATE YOUR GOALS.</span></h1>
+            <p>State-of-the-art strength training, expert personal guidance, and high-energy conditioning available 24 hours a day in Lebu, Addis Ababa.</p>
+            <div class="hero-btns">
+                <a href="#register" class="btn btn-primary btn-lg">Start Free Trial <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="#workout-guide" class="btn btn-outline btn-lg"><i class="fa-solid fa-dumbbell"></i> View Routines</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <h2>24/7</h2>
+                    <p>Open Access</p>
+                </div>
+                <div class="stat-item">
+                    <h2>4.5★</h2>
+                    <p>Rating (Lebu)</p>
+                </div>
+                <div class="stat-item">
+                    <h2>100%</h2>
+                    <p>Results Driven</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature Cards -->
+    <section class="section about-section" id="about">
+        <div class="section-title">
+            <span class="sub-heading">WHY LIFE LINE FITNESS</span>
+            <h2>ENGINEERED FOR <span>EXCELLENCE</span></h2>
+        </div>
+        <div class="cards-grid">
+            <div class="glass-card">
+                <div class="card-icon"><i class="fa-solid fa-dumbbell"></i></div>
+                <h3>Modern Equipment</h3>
+                <p>Heavy duty free weights, cable stations, cardio units, and bio-mechanically engineered machines.</p>
+            </div>
+            <div class="glass-card">
+                <div class="card-icon"><i class="fa-solid fa-user-ninja"></i></div>
+                <h3>Expert Trainers</h3>
+                <p>Certified coaches available to guide your posture, power development, and nutrition plans.</p>
+            </div>
+            <div class="glass-card">
+                <div class="card-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                <h3>Clean & Safe</h3>
+                <p>Sanitized workout zones, spacious locker areas, and a respectful community environment.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Membership Plans -->
+    <section class="section plans-section" id="plans">
+        <div class="section-title">
+            <span class="sub-heading">MEMBERSHIP OPTIONS</span>
+            <h2>CHOOSE YOUR <span>POWER PLAN</span></h2>
+        </div>
+        <div class="plans-grid">
+            <div class="plan-card">
+                <h3>1 Month Pass</h3>
+                <div class="price">Standard Access</div>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i> 24/7 Gym Access</li>
+                    <li><i class="fa-solid fa-check"></i> Free Weights & Machines</li>
+                    <li><i class="fa-solid fa-check"></i> Locker Room Access</li>
+                </ul>
+                <a href="#register" onclick="selectPlan('1 Month Plan')" class="btn btn-outline full-width">Select Plan</a>
+            </div>
+
+            <div class="plan-card popular">
+                <div class="popular-badge">MOST POPULAR</div>
+                <h3>3 Months VIP</h3>
+                <div class="price">Pro Fitness</div>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i> 24/7 Full Gym Access</li>
+                    <li><i class="fa-solid fa-check"></i> Custom Workout Plan</li>
+                    <li><i class="fa-solid fa-check"></i> Trainer Consultation</li>
+                </ul>
+                <a href="#register" onclick="selectPlan('3 Months VIP')" class="btn btn-primary full-width">Select Plan</a>
+            </div>
+
+            <div class="plan-card">
+                <h3>6 Months Pro</h3>
+                <div class="price">Elite Fitness</div>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i> All 3-Month Features</li>
+                    <li><i class="fa-solid fa-check"></i> Nutrition & Diet Guide</li>
+                    <li><i class="fa-solid fa-check"></i> 1 Free Guest Pass/Month</li>
+                </ul>
+                <a href="#register" onclick="selectPlan('6 Months Pro')" class="btn btn-outline full-width">Select Plan</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workout Guide Section -->
+    <section class="section workout-section" id="workout-guide">
+        <div class="section-title">
+            <span class="sub-heading">PRO TRAINING GUIDE</span>
+            <h2>TARGETED <span>WORKOUT ROUTINES</span></h2>
+        </div>
+
+        <div class="tab-navigation">
+            <button class="tab-btn active" data-tab="hypertrophy"><i class="fa-solid fa-biceps"></i> Muscle Gain</button>
+            <button class="tab-btn" data-tab="fatloss"><i class="fa-solid fa-fire-flame-curved"></i> Fat Loss</button>
+            <button class="tab-btn" data-tab="beginner"><i class="fa-solid fa-seedling"></i> Beginner</button>
+        </div>
+
+        <div class="tab-content active" id="hypertrophy">
+            <div class="routine-grid">
+                <div class="routine-card">
+                    <h4>Day 1: Chest & Triceps</h4>
+                    <ul>
+                        <li><span>Bench Press</span> <strong>4 Sets × 8-10 Reps</strong></li>
+                        <li><span>Incline Dumbbell Press</span> <strong>3 Sets × 10-12 Reps</strong></li>
+                        <li><span>Cable Chest Flyes</span> <strong>3 Sets × 15 Reps</strong></li>
+                        <li><span>Triceps Pushdowns</span> <strong>4 Sets × 12 Reps</strong></li>
+                    </ul>
+                </div>
+                <div class="routine-card">
+                    <h4>Day 2: Back & Biceps</h4>
+                    <ul>
+                        <li><span>Lat Pulldowns</span> <strong>4 Sets × 10 Reps</strong></li>
+                        <li><span>Seated Cable Rows</span> <strong>4 Sets × 10 Reps</strong></li>
+                        <li><span>Dumbbell Hammer Curls</span> <strong>3 Sets × 12 Reps</strong></li>
+                        <li><span>Preacher Curls</span> <strong>3 Sets × 10 Reps</strong></li>
+                    </ul>
+                </div>
+                <div class="routine-card">
+                    <h4>Day 3: Legs & Shoulders</h4>
+                    <ul>
+                        <li><span>Squats / Leg Press</span> <strong>4 Sets × 8 Reps</strong></li>
+                        <li><span>Overhead Dumbbell Press</span> <strong>4 Sets × 10 Reps</strong></li>
+                        <li><span>Lateral Raises</span> <strong>4 Sets × 15 Reps</strong></li>
+                        <li><span>Calf Raises</span> <strong>4 Sets × 20 Reps</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-content" id="fatloss">
+            <div class="routine-grid">
+                <div class="routine-card">
+                    <h4>HIIT Circuit</h4>
+                    <ul>
+                        <li><span>Treadmill Sprint</span> <strong>30 Sec Sprint / 30 Sec Rest (15 Mins)</strong></li>
+                        <li><span>Kettlebell Swings</span> <strong>4 Sets × 20 Reps</strong></li>
+                        <li><span>Burpees</span> <strong>3 Sets × 15 Reps</strong></li>
+                    </ul>
+                </div>
+                <div class="routine-card">
+                    <h4>Core Shredder</h4>
+                    <ul>
+                        <li><span>Plank Hold</span> <strong>3 Sets × 60 Secs</strong></li>
+                        <li><span>Hanging Leg Raises</span> <strong>3 Sets × 15 Reps</strong></li>
+                        <li><span>Russian Twists</span> <strong>3 Sets × 30 Reps</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-content" id="beginner">
+            <div class="routine-grid">
+                <div class="routine-card">
+                    <h4>Full Body Foundation</h4>
+                    <ul>
+                        <li><span>Goblet Squats</span> <strong>3 Sets × 10 Reps</strong></li>
+                        <li><span>Push-Ups</span> <strong>3 Sets × 10 Reps</strong></li>
+                        <li><span>Lat Pulldown</span> <strong>3 Sets × 12 Reps</strong></li>
+                        <li><span>Plank</span> <strong>3 Sets × 45 Secs</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BMI Calculator Tool -->
+    <section class="section calculator-section" id="calculator">
+        <div class="calculator-container">
+            <div class="calc-text">
+                <span class="sub-heading">INTERACTIVE TOOL</span>
+                <h2>CHECK YOUR <span>BMI INDEX</span></h2>
+                <p>Calculate your Body Mass Index to determine your baseline fitness goal.</p>
+            </div>
+            <div class="calc-box">
+                <div class="input-group">
+                    <label>Weight (kg)</label>
+                    <input type="number" id="calcWeight" placeholder="e.g. 70">
+                </div>
+                <div class="input-group">
+                    <label>Height (cm)</label>
+                    <input type="number" id="calcHeight" placeholder="e.g. 175">
+                </div>
+                <button onclick="calculateBMI()" class="btn btn-primary full-width">Calculate BMI</button>
+                <div class="calc-result" id="calcResult"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Form -->
+    <section class="section register-section" id="register">
+        <div class="section-title">
+            <span class="sub-heading">JOIN LIFE LINE FITNESS</span>
+            <h2>REGISTER <span>YOUR MEMBERSHIP</span></h2>
+        </div>
+
+        <div class="form-card">
+            <form id="gymForm">
+                <div class="form-row">
+                    <div class="input-group">
+                        <label>Full Name (ሙሉ ስም)</label>
+                        <input type="text" id="fullName" placeholder="Abebe Kebede" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Phone Number (ስልክ ቁጥር)</label>
+                        <input type="tel" id="phone" placeholder="0911......" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="input-group">
+                        <label>Membership Plan</label>
+                        <select id="planSelect">
+                            <option value="1 Month Plan">1 Month Pass</option>
+                            <option value="3 Months VIP">3 Months VIP</option>
+                            <option value="6 Months Pro">6 Months Pro</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label>Primary Fitness Goal</label>
+                        <select id="goalSelect">
+                            <option value="Muscle Building">Muscle Building</option>
+                            <option value="Fat Loss / Weight Loss">Fat Loss / Weight Loss</option>
+                            <option value="General Health">General Health</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="submit" id="submitBtn" class="btn btn-primary btn-lg full-width">
+                    <i class="fa-solid fa-paper-plane"></i> Submit Registration
+                </button>
+                <div id="formStatus" class="form-status"></div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="#home" class="logo"><i class="fa-solid fa-bolt-lightning"></i> LIFE LINE <span>FITNESS</span></a>
+                <p>Lebu's top-rated 24/7 training facility located front of Lebu Fikre Kunsipagna, Royal Apartment.</p>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Info</h4>
+                <p><i class="fa-solid fa-phone"></i> 0911 18 21 41</p>
+                <p><i class="fa-solid fa-location-dot"></i> Lebu (ለቡ), Addis Ababa</p>
+                <p><i class="fa-solid fa-building"></i> Gidami Business Center, Royal Apartment</p>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Our Socials</h4>
+                <a href="https://www.tiktok.com/@life.line.fitness" target="_blank" class="social-btn">
+                    <i class="fa-brands fa-tiktok"></i> life.line.fitness
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Life Line Fitness Lebu. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
